@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url(fonts/Metropolis-Regular.otf) format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url(fonts/Metropolis-Medium.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url(fonts/Metropolis-SemiBold.otf) format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url(fonts/Metropolis-Bold.otf) format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url(fonts/Metropolis-ExtraBold.otf) format("opentype");
+  font-weight: 800;
+}
+
+
+body, .container-fluid {
+  font-size: .875rem;
+  background-color: #111821;
+  font-family: "Metropolis";
+  overflow-x: hidden;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px #111821;
+}
+
+.separator {
+    background-color:white;
+    height: 1px;
+    width: 85%;
+    margin: 25px;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  background-color: #1e2a3a;
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+}
+
+.sidebar-sticky {
+  height: calc(100vh - 48px);
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #BBBBBB;
+  font-size: 1rem;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+
+  width: 20px;
+  height: 20px;
+}
+
+#sidebar-img img {
+    margin-top: 30px;
+    max-width: 60% !important;
+    border-radius: 60%;
+    border: 2px solid;
+    border-color: #81C6E8;
+}
+
+.sidebar .nav-link.active {
+  color: #81C6E8;
+}
+
+.sidebar .nav-link:hover {
+  color: white;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+.sidebar ul {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 1.3rem;
+    width: 100%;
+  }
+}
+
+.social ul {
+    margin-top: 10%;
+}
+.social li {
+    list-style:none;
+    margin-right: 10px;
+}
+.social a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    background-color: #74b3d2;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.social .feather {
+    height: 15px;
+    width: 15px;
+    color: white;
+    stroke-width: 2;
+}
+
+.social li:hover {
+    opacity: 0.7;
+}
+
+.social a:link, .social a:visited, .social a:hover, .social a:active {
+    text-decoration: none !important;
+}
+
+.section {
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    color: #BBBBBB;
+    border-bottom: 1px solid rgba(116, 179, 210, 0.4);
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+
+.section h2, .section h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+section h2:before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 100%;
+    background: rgba(116, 179, 210, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#experience .title h5, #education .title h5 {
+    color: white;
+}
+
+#experience .title h6, #education .title h6 {
+    font-style: italic;
+}
+
+.years {
+    margin-top: -32px;
+    font-weight:bold;
+    color: #74b3d2;
+    float:right;
+}
+
+.work-card {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#education #work-cards .work-card {
+    border-left: 3.5px solid rgba(146, 89, 141, 1);
+}
+
+#experience #work-cards .work-card {
+    border-left: 3.5px solid rgba(149, 65, 106, 0.7);
+}
+
+#education #work-cards .work-card  {
+    background-color: rgba(136, 113, 170, 0.13)
+}
+
+#experience #work-cards .work-card {
+    background-color: rgba(0, 91, 74, 0.13);
+}
+
+
+.progress-bar {
+    color: white;
+    font-weight: bold;
+}
+
+.progress {
+    margin-bottom: 30px;
+}
+
+.other-card {
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    background-color: rgba(14,50,40, 0.4);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#about h2{
+    margin-bottom: 50px;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+@media (max-width: 550px) {
+    .years {
+        margin-top: -55px;
+        float:left;
+    }
+}
+
+#about p i {
+    font-weight: bold;
+}
+
+#skills h5 {
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+
+.tools {
+    background-color: rgba(123, 136, 190, 0.6);
+}
+
+.languages {
+    background-color:rgba(115, 177, 209, 0.5);
+}
+
+.frameworks {
+    background-color: rgba(146, 89, 141, 0.6);
+}
+
+#experience .list-group {
+    background-color: rgba(129, 198, 232, 0.1);
+}
+
+#experience .list-group-item {
+    border: 1px solid black;
+}
+
+#experience i {
+    font-weight: bold;
+}
+
+#accordionPanelsStayOpen {
+    margin-top: 40px;
+    color: white;
+}
+
+.accordion-item, .accordion-header, .accordion-header button{
+    color: white;
+    background-color: rgba(68, 141, 130, 0.4);
+}
+
+.accordion-header button {
+    margin-left: -20px;
+    background-color: rgba(68, 141, 130, 1);
+
+    color: white;
+}
+
+.accordion-header button:not(.collapsed) {
+    background-color: rgba(68, 141, 130, 1);
+    color: white;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
