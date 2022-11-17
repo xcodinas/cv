@@ -1,374 +1,574 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.104.2">
+        <link href="assets/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link href="assets/style.css" rel="stylesheet">
+        <link id="pdf-styles" href="assets/style-pdf.css" rel="stylesheet" disabled="disabled">
+        <title>Xavier Codinas - CV</title>
+    </head>
+    <body>
 
-  <head>
+        <div class="container-fluid">
+            <button class="hidepdf navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span data-feather="menu" class=""></span>
+                <span class="align-right">Navigation</span>
+            </button>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+            <div class="hidepdf alert alert-info alert-dismissible fade show col-md-10 text-center" style="margin-left:inherit; margin-bottom: 50px;" role="alert">
+                Better in pdf? <a href="#" onClick="generatePDF()"><span data-feather="file-text"></span>Download</a>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <nav id="sidebarMenu" class="hidepdf col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <div id="title">
+                        <span>Xavier Codinas</span>
+                    </div>
+                    <div id="sidebar-img">
+                        <img src="assets/img/profile-pic.jpg" class="img-thumbnail mx-auto d-block" alt="...">
+                    </div>
+                    <div class="social d-flex justify-content-center">
+                        <ul class="list-group list-group-horizontal">
+                            <li>
+                                <a href="https://github.com/xcodinas">
+                                    <span data-feather="github"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/xcodinas">
+                                    <span data-feather="linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:hello@xcodinas.es">
+                                    <span data-feather="mail"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://devpost.com/xcodinas">
+                                    <span data-feather="layers"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="separator"></div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about" id="nav-about">
+                                <span data-feather="help-circle" class="align-text-bottom"></span>
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                    <a class="nav-link" href="#experience" id="nav-experience">
+                      <span data-feather="briefcase" class="align-text-bottom"></span>
+                      Experience
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education" id="nav-education">
+                      <span data-feather="book-open" class="align-text-bottom"></span>
+                      Education
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills" id="nav-skills">
+                      <span data-feather="user-check" class="align-text-bottom"></span>
+                      Skills
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#other" id="nav-other">
+                      <span data-feather="list" class="align-text-bottom"></span>
+                      Other
+                    </a>
+                  </li>
+                </ul>
+            </nav>
 
-    <title>Xavier Codinas - CV</title>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="show-pdf">
+                    <h1>Xavier Codinas</h1>
+                    <i>
+                    <p>hello@xcodinas.es - C:/ Portal Nº20 · Alguaire (Lleida) 25125</p>
+                    </i>
+                </div>
+                <section class="section" id="about">
+                    <div class="content">
+                        <h2>About me</h2>
+                        <p>
+                        I am a Software Developer who enjoys and tries to always be learning and evolving in order to improve as personally and professional.
+                        My main language It's <i>Python</i> as is the one which I'm more proficiency with, but as I said before
+                        and following that statement
+                        I'm always open to new languages or frameworks in order to improve my knowledge.
+                        </p>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                        <p>
+                        Following <i>Python</i>, I would say that other languages with I'm proficient with would be <i>JavaScript</i> and <i>PHP</i>.
+                        As a Software Developer I always try to develop clean and meaningful code, following styles guidelines (if the language has any)
+                        or trying to write it in the most readable way in order to make it easy for the one who is reading it, also, functionally I try
+                        to make it as simple as possible while accomplishing the expected feature.
+                        </p>
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="assets/css/resume.css" rel="stylesheet">
+                        <p>
+                        I have developed many varieties of projects involving all types of solutions (frontend, backend, scripting...),
+                        right now, I'm focused in developing backend solutions rather than frontend.
+                        </p>
 
-  </head>
+                        <p class="hidepdf" style="margin-top:50px;">
+                        Email: hello@xcodinas.es
+                        </p>
+                    </div>
+                </section>
+                <section class="section" id="experience">
+                    <div class="content">
+                        <h2 class="section-title">Experience</h2>
+                        <div id="work-cards">
+                            <div class="work-card aos-item" data-aos="fade-right">
+                                <div class="title">
+                                    <div style="clear: both;">
+                                        <h5>Python programmer</h5>
+                                        <span class="years">November 2021 - Present</span>
+                                    </div>
+                                    <div>
+                                        <h6>Seidor Opentrends S.L</h6>
+                                    </div>
+                                </div>
+                                <p>
+                                    I have been on multiple projects so far using different technologies in each one of them.
+                                </p>
+                                <p>
+                                    In all of the projects I've been using <i>Vim</i> as code editor, <i>Linux</i> as operative
+                                    system and <i>Mysql</i> / <i>Postgresql</i>.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <p>Adding a new feature to an existing python project. Connecting with the gitlab api
+                                        and adding new repositories / groups as well as managing users and permissions when
+                                        some conditions were delivered.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p>Adding functionalities to an existing <i>Laravel</i> project.</p>
+                                        <p>The most notable functionality would be an advanced filter made generic,
+                                        so adding fields is as easy as adding them with some info in an array.</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p>Developing a project that uses <i>Amazon Rekognition</i> to capture and analyze images sent
+                                        by the user and passing some checks such as confirming that the image matches with the person and
+                                        other checks.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="work-card aos-item" data-aos="fade-right">
+                                <div class="title">
+                                    <div style="clear: both;">
+                                        <h5>Programmer</h5>
+                                        <span class="years">June 2016 - November 2021</span>
+                                    </div>
+                                    <div>
+                                        <h6>Aritmos</h6>
+                                    </div>
+                                    <p>
+                                    Working in a small team of developers, we were creating an agroalimentary custom solution from an existing
+                                    erp called <i>Tryton</i>. We were using <i>GIT</i> as version control, with automated tests implemented in the workflow
+                                    and custom deployments.
+                                    </p>
+                                    <p>
+                                    The stack we were using was <i>Python</i> for the backend, <i>JavaScript</i> + <i>jQuery</i> for the frontend
+                                    and <i>PostgreSQL</i> for the database management.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="education">
+                    <div class="content">
+                        <h2 class="section-title">Education</h2>
+                        <div id="work-cards">
+                            <div class="work-card aos-item" data-aos="fade-left">
+                                <div class="title">
+                                    <div style="clear: both;">
+                                        <h5>University of Cambridge</h5>
+                                        <span class="years">July 2014</span>
+                                    </div>
+                                    <div>
+                                        <h6>First Certificate in English</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-card aos-item" data-aos="fade-left">
+                                <div class="title">
+                                    <div style="clear: both;">
+                                        <h5>Caparrella High School</h5>
+                                        <span class="years">2015 - 2017</span>
+                                    </div>
+                                    <div>
+                                        <h6>Web applications development</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-card aos-item" data-aos="fade-left">
+                                <div class="title">
+                                    <div style="clear: both;">
+                                        <h5>Manuel de Montsuar High School</h5>
+                                        <span class="years">2012 - 2015</span>
+                                    </div>
+                                    <div>
+                                        <h6>High School Diploma</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="skills">
+                     <div class="content">
+                        <h2 class="section-title">Skills</h2>
+                        <h5>Languages</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-python-plain colored"></i> Python</span>
+                                <div class="progress">
+                                    <div class="progress-bar languages aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 90%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-php-plain colored"></i> PHP</span>
+                                <div class="progress">
+                                    <div class="progress-bar languages aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 85%" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                                <div class="progress">
+                                    <div class="progress-bar languages aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 85%" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+                                <div class="progress">
+                                    <div class="progress-bar languages aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 80%" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Frameworks</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-flask-original colored"></i> Flask</span>
+                                <div class="progress">
+                                    <div class="progress-bar frameworks aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 90%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-django-plain colored"></i> Django</span>
+                                <div class="progress">
+                                    <div class="progress-bar frameworks aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 80%" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-laravel-plain colored"></i> Laravel</span>
+                                <div class="progress">
+                                    <div class="progress-bar frameworks aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-vuejs-plain colored"></i> VueJS</span>
+                                <div class="progress">
+                                    <div class="progress-bar frameworks aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                                <div class="progress">
+                                    <div class="progress-bar frameworks aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 70%" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-codeigniter-plain colored"></i> Codeigniter</span>
+                                <div class="progress">
+                                    <div class="progress-bar frameworks aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 70%" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Tools</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 90%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-mysql-plain colored"></i> Mysql</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 80%" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-github-original"></i> Github</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 90%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-grafana-original colored"></i> Grafana</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 70%" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-vim-plain colored"></i> VIM</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 85%" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-docker-plain colored"></i> Docker</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 70%" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="devicon-googlecloud-plain colored"></i> Google Cloud</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 60%" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="devicon-amazonwebservices-plain colored"></i> AWS</span>
+                                <div class="progress">
+                                    <div class="progress-bar tools aos-item"
+                                        role="progressbar"
+                                        data-aos="fade-right"
+                                        data-aos-delay="100"
+                                        data-aos-anchor="#skills"
+                                        style="width: 50%" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="other">
+                    <div class="content">
+                        <h2 class="section-title">Other Information</h2>
+                        <ul class="list-unstyled">
+                            <li id="tryton-commits" class="other-card">
+                                <span data-feather="list"></span> Gained the status of commiter in <a href="https://hg.tryton.org"> Tryton</a>.</br>
+                                <span data-feather="git-merge"></span> Having many commits in the official <i>Tryton</i> repository.</br>
+                                <span data-feather="user-check"></span> <span>Here I list some of the commits I most like as for the work It took and the change it represented.</span>
+                                <div class="hidepdf accordion" id="accordionPanelsStayOpen">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-controls="panelsStayOpen-collapseOne">
+                                            Tryton - Backend
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a href="https://hg.tryton.org/trytond/rev/271c73cf8bae?revcount=40">Add PYSON widget</a></li>
+                                                    <li><a href="https://hg.tryton.org/trytond/rev/d2328dec9188?revcount=80">Add format_timedelta in report</a></li>
+                                                    <li><a href="https://hg.tryton.org/trytond/rev/2ec548fc4fbb?revcount=80">Add option to update modules list
+</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-controls="panelsStayOpen-collapseTwo">
+                                                Sao - Frontend
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a href="https://hg.tryton.org/sao/rev/ca0cab806669?revcount=80">Add calendar view</a></li>
+                                                    <li><a href="https://hg.tryton.org/sao/rev/c31567bc9208?revcount=80">Add favorites menu</a></li>
+                                                    <li><a href="https://hg.tryton.org/sao/rev/0aaf6513da34?revcount=80">Simplify login with single database</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="tryton-commits" class="other-card">
+                                <span data-feather="terminal"></span> Participated in many hackatons shuch as <a href="https://lleidahack.dev/hackeps-2022/">Lleida HackEPS</a> and
+                                <a href="https://hackupc.com/">HackUPC</a>.
+                                </br>
+                                <span data-feather="send"></span> Resulting winner for three times in a row in HackEPS challenges.
+                                </br>
+                                <span data-feather="code"></span> Also, winning the clean code contest once (and a mention in an other edition) in the HackEPS edition given by the
+                                <a href="https://www.udl.cat/ca/">University of Lleida</a>.
+                            </li>
+                            <li id="tryton-commits" class="other-card">
+                                <span data-feather="globe"></span> Native Spanish and Catalan Speaker also being able to speak and write in English fluently.
+                            </li>
+                            <li id="tryton-commits" class="other-card">
+                                <span data-feather="credit-card"></span> Having driving license and an available car.
+                            </li>
+                            <li id="tryton-commits" class="other-card">
+                                <span data-feather="user"></span> Responsible Motivated in learning new technologies Python enthusiast
+                            </li>
+                        </ul>
+                    </div>
 
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">CV</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#other">Other Information</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Xavier
-            <span class="text-primary">Codinas</span>
-          </h1>
-          <div class="subheading mb-5">C:/ Portal Nº20 · Alguaire (Lleida) 25125  ·
-            <a href="mailto:xavier19966@gmail.com">xavier19966@gmail.com</a>
-          </div>
-          <p class="mb-5">I am a person who enjoys learning new languages, frameworks and new programming ways. I would say that my main language is Python but I'm also used to JavaScript and PHP. In python I've developed so many personal
-          projects, starting by a Telegram bot and ending with an API in flask. As a programmer I always try to write clean and meaningfull code (Using pep8 in python, f.e). If you want to know more about me just scroll down!</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/xcodinas/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/xcodinas">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
+                </section>
+                <footer class="hidepdf text-center">
+                    &copy Xavier Codinas - Website made using
+                    <i class="devicon-html5-plain colored"></i> + <i class="devicon-css3-plain colored"></i> + <i class="devicon-jquery-plain colored"></i>
+                </footer>
+            </main>
         </div>
-      </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Python Programmer</h3>
-              <div class="subheading mb-3">Opentrends</div>
-	      <p>Developing REST APIS (Flask + Flask-Restful)</br>
-	      Using PostgreSQL as database engine</br>
-	      Developing tests with Pytest</br>
-Using GIT as control version.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">November 2021 - Present</span>
-            </div>
-          </div>
-          
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Programmer</h3>
-              <div class="subheading mb-3">Aritmos</div>
-              <p>Working with a small team of developers with an ERP called <a href="http://tryton.org/">Tryton</a> and adapting it to our customers necessities.
-              We are also using GIT, a custom path workflow and automated tests with a deployment when the build success. </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">June 2016 - November 2021</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Laborer</h3>
-              <div class="subheading mb-3">Actel S.L</div>
-              <p>The work was depending on the company needs but mainly I was in charge of the strapping machine.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2015 - September 2015</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Laborer</h3>
-              <div class="subheading mb-3">Actel S.L</div>
-              <p>The work was depending on the company needs but mainly I was in charge of the strapping machine.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2014 - September 2014</span>
-            </div>
-          </div>
-
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Caparrella High School</h3>
-              <div class="subheading mb-3">Web applications development</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2015 - 2017</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Manuel de Montsuar High School</h3>
-              <div class="subheading mb-3">High School Diploma</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2012 - 2015</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Cambridge</h3>
-              <div class="subheading mb-3">First Certificate in English</div>
-              <p>Licence: 0046444194</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2014</span>
-            </div>
-          </div>
-
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="skill" >
-                <p><i class="devicons devicons-python"></i> Python</p>
-                <div class="skill-bar skill2 wow slideInLeft animated" style="width: 85%">
-                  <span class="skill-count2">85%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-php"> </i> PHP </p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-jquery"></i> jQuery </p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-javascript"></i> JavaScript </p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 75%">
-                  <span class="skill-count1">75%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-html5"></i> HTML5</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 60%">
-                  <span class="skill-count1">60%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-css3"></i> CSS3</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 55%">
-                  <span class="skill-count1">55%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-bootstrap"></i> Bootstrap</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 65%">
-                  <span class="skill-count1">65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="skill">
-                <p><i class="devicons devicons-python"></i> Flask</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-codeigniter"></i> CodeIgniter</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-laravel"></i> Laravel</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                  <p> <i class="devicons devicons-javascript"></i>VueJS</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 70%">
-                  <span class="skill-count1">70%</span>
-                </div>
-              </div>
-              <div  class="skill">
-                <p><i class="devicons devicons-database"></i> PostgreSQL</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 70%">
-                  <span class="skill-count1">70%</span>
-                </div>
-              </div>
-              <div  class="skill">
-                <p><i class="devicons devicons-mysql"></i> MySQL</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 70%">
-                  <span class="skill-count1">70%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-github"></i> GitHub</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 60%">
-                  <span class="skill-count1">60%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-bitbucket"></i> BitBucket</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-linux"></i> Linux</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 80%">
-                  <span class="skill-count1">80%</span>
-                </div>
-              </div>
-              <div class="skill">
-                <p><i class="devicons devicons-vim"></i> VIM</p>
-                <div class="skill-bar skill1 wow slideInLeft animated" style="width: 90%">
-                  <span class="skill-count1">90%</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="other">
-        <div class="my-auto">
-          <h2 class="mb-5">Other Information</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Gained the status of commiter in <a href="https://hg.tryton.org"> Tryton</a> </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Winner of the Origin studio challenge in the <a href="https://lleidahack.github.io/">Lleida Hackaton</a></li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mention in the <a href="http://www.udl.es/ca/">UDL</a> "Clean code" contest in the Lleida hackaton.</li>
-            <li>
-              <i class="fa-li fa fa-tachometer text-warning"></i>
-              Developed Torrebesses Library <a href="http://www.torrebesses.cat/biblioteca/">Website</a>  </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Co-founder and CTO of <a href="https://deletos.es"> Deletos</a> </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Backend developing in <a href="https://deletos.es"> Deletos</a> (An api with FLASK)</li>
-            <br>
-            <li>
-              <i class="fa-li fa fa-language text-warning"></i>
-              Native Spanish and Catalan speaker</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              </li>
-            <li>
-              <i class="fa-li fa fa-car text-warning"></i>
-              Driving Licence and available car.</li>
-            <li>
-              <i class="fa-li fa fa-check text-warning"></i>
-              Responsible
-              <i class=" fa fa-check text-warning"></i>
-              Motivated in learning new technologies
-              <i class=" fa fa-check text-warning"></i>
-              Python enthusiast
-
-
-            </li>
-          </ul>
-        </div>
-      </section>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="assets/js/resume.js"></script>
-
-  </body>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="assets/scripts.js"></script>
+    </body>
 </html>
